@@ -1,4 +1,5 @@
 # sample-latex-with-ci
+[![wercker status](https://app.wercker.com/status/8c7da41e69f7f8cb73051526bb355821/s/master "wercker status")](https://app.wercker.com/project/byKey/8c7da41e69f7f8cb73051526bb355821)
 
 upLaTeXの文書をCIで自動校正(RedPen)と自動ビルドするサンプル
 
