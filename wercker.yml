@@ -1,0 +1,19 @@
+box: akahana/texlive-with-sourcehanfonts:2018
+
+# 校正を行うPipeline
+autocheck:
+  box: akahana/redpen-cli:0.10.1
+  
+  steps:
+    - script:
+      name: redpen check
+      code: |
+        find . -name '*.tex' | xargs -I{} redpen -c redpen-conf.xml {}
+
+# ビルドを行うPipeline
+build:
+  steps:
+    - script:
+      name: typesetting
+      code: |
+        latexmk sample
